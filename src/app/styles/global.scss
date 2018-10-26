@@ -1,0 +1,14 @@
+@import '../../../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "mixins";
+@import "material";
+
+
+body{
+  margin: 0;
+}
+.fixed{
+  position: fixed;
+}
+.pad64{
+  padding-top: 64px;
+}

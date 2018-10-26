@@ -1,0 +1,22 @@
+<div fxFill fxLayout="column" layout-align="center none">
+  <div layout="row" layout-align="center none">
+    <mat-card class="login-card">
+      <mat-card-header>
+        <mat-card-title>{{title}}</mat-card-title>
+        <mat-card-subtitle>Login</mat-card-subtitle>
+        <div class="flex-spacer"></div>
+      </mat-card-header>
+      <mat-card-content>
+        <form>
+          <mat-form-field>
+            <input matInput #test class="input" placeholder="Benutzername">
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput #test2 class="input" placeholder="Passwort" type="password">
+          </mat-form-field>
+          <button mat-flat-button class="button">Go!</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

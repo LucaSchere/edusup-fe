@@ -1,0 +1,7 @@
+<app-nav *ngIf="isLoggedIn">
+  <div class="pad64">
+    <router-outlet></router-outlet>
+  </div>
+</app-nav>
+<router-outlet *ngIf="!isLoggedIn"></router-outlet>
+
