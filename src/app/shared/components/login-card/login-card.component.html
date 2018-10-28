@@ -7,14 +7,14 @@
         <div class="flex-spacer"></div>
       </mat-card-header>
       <mat-card-content>
-        <form>
+        <form (submit)="onClickLogin($event)">
           <mat-form-field>
-            <input matInput #test class="input" placeholder="Benutzername">
+            <input matInput #test class="input" id="username" placeholder="Benutzername">
           </mat-form-field>
           <mat-form-field>
-            <input matInput #test2 class="input" placeholder="Passwort" type="password">
+            <input matInput #test2 class="input" id="password" placeholder="Passwort" type="password">
           </mat-form-field>
-          <button mat-flat-button class="button">Go!</button>
+          <button type="submit" mat-flat-button class="button">Go!</button>
         </form>
       </mat-card-content>
     </mat-card>

@@ -1,3 +1,6 @@
 @import "mixins";
 
-
+mat-sidenav-content{
+  background-color: $white;
+  padding-bottom: 5px;
+}
