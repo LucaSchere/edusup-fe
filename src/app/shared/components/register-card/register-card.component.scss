@@ -1,0 +1,51 @@
+@import "../../../styles/global";
+
+mat-card{
+  margin-top: 100px;
+  margin-right: calc(33.3333333333% - 20px);
+  margin-left: calc(33.3333333333% - 20px);
+  margin-bottom: 5px;
+  width: calc(33.3333333333% + 40px);;
+}
+mat-form-field{
+  width: calc(100% - 20px);
+}
+
+mat-card-title{
+  font-size: 25px !important;
+  font-weight: bold !important;
+}
+
+mat-card-subtitle{
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+.input{
+  width: 100% !important;
+  height: 20px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 960px) {
+  mat-card{
+    margin: 20px !important;
+    width: auto;
+  }
+}
+mat-card-content{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.changeToRegister{
+  margin-left: 20px;
+}
+.changeToRegister a{
+  text-decoration: none;
+  color: $primary;
+  font-weight: bold;
+}
+
+.bottom{
+  margin-top: 10px;
+}

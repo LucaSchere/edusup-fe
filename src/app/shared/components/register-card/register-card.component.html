@@ -1,0 +1,39 @@
+<mat-card class="login-card">
+  <mat-card-header>
+    <mat-card-title>{{title}}</mat-card-title>
+    <mat-card-subtitle>Register</mat-card-subtitle>
+    <div class="flex-spacer"></div>
+  </mat-card-header>
+  <mat-card-content>
+    <form (submit)="onRegister(f)" #f="ngForm">
+      <mat-form-field>
+        <input matInput class="input" type="text" id="username" ngModel placeholder="Benutzername" name="username">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput class="input" type="text" id="email" ngModel placeholder="Email" name="email">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput class="input" type="text" id="firstName" ngModel placeholder="Vorname" name="firstName">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput class="input" type="text" id="lastName" ngModel placeholder="Nachname" name="lastName">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput class="input" [matDatepicker]="picker" (click)="picker.open()" id="birthday" readonly ngModel placeholder="Geburtstag" name="birthday">
+        <mat-datepicker-toggle matSuffix  [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker ></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput class="input" type="password" id="password" ngModel placeholder="Passwort" name="password">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput class="input" type="password" id="passwordConfirm" ngModel placeholder="Passwort wiederholen" name="passwordConfirm">
+      </mat-form-field>
+      <div class="bottom">
+        <button type="submit" mat-flat-button class="button">Go!</button>
+        <span class="changeToRegister"><a
+          routerLink="/login">Melde dich an!</a></span>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>
