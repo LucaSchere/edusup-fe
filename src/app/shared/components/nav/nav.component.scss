@@ -1,17 +1,17 @@
-@import "../../../styles/mixins";
+@import "../../../styles/global";
 
 .sidenav {
   width: 200px !important;
-  background-color: #eeeeee;
+  background-color: #F5F5F5;
 }
 .mat-toolbar.mat-primary {
-  position: sticky;
   top: 0;
 }
 .avatar{
   position: fixed;
   right: 20px;
   margin-top: 5px;
+  z-index: 1;
 }
 .avatarImg{
   width: 40px;
@@ -19,17 +19,12 @@
 }
 
 mat-toolbar{
-  background-color: $primary--color !important;
   z-index: 2;
-  color: $white;
-}
-mat-nav-list a:hover{
-  background-color: $primary--color !important;
-  color: $white;
 }
 mat-nav-list{
   padding: 0 !important;
 }
-mat-sidenav-container{
-  height: 100% !important;
+
+.redButton{
+  color: red;
 }

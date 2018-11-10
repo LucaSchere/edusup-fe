@@ -22,9 +22,13 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
+    "amazing-time-picker-angular6": "^1.5.5",
+    "angular-particle": "^1.0.4",
     "core-js": "^2.5.4",
     "hammerjs": "^2.0.8",
     "localstorage": "^1.0.1",
+    "ngx-color": "^2.0.5",
+    "ngx-material-timepicker": "^2.8.3",
     "rxjs": "~6.2.0",
     "sessionstorage": "^0.1.0",
     "zone.js": "~0.8.26"

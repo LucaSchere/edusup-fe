@@ -8,18 +8,24 @@ import { NavComponent} from './components/nav/nav.component';
 import { RouterModule } from '@angular/router';
 import { CalculatorComponent } from './pages/calculator/calculator.component';
 import { LoginCardComponent } from './components/login-card/login-card.component';
-import { LoginComponent } from './pages/login/user-login.component';
-import { RegisterComponent } from './pages/users-register/user-register.component';
-import { TestComponent } from './pages/test/test.component';
-
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ParticlesModule } from 'angular-particle';
+import { RegisterCardComponent } from './components/register-card/register-card.component';
+import { AmazingTimePickerModule } from 'amazing-time-picker-angular6';
 
 @NgModule({
   imports: [
     MaterialModule,
     CommonModule,
     LayoutModule,
-    RouterModule
-
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule,
+    ParticlesModule,
+    AmazingTimePickerModule,
   ],
   declarations: [
     DashboardComponent,
@@ -29,7 +35,7 @@ import { TestComponent } from './pages/test/test.component';
     LoginComponent,
     LoginCardComponent,
     RegisterComponent,
-    TestComponent,
+    RegisterCardComponent,
   ],
   exports: [
     DashboardComponent,
@@ -40,6 +46,7 @@ import { TestComponent } from './pages/test/test.component';
     LoginComponent,
     LoginCardComponent,
     RegisterComponent,
+    AmazingTimePickerModule,
 
 
 ]

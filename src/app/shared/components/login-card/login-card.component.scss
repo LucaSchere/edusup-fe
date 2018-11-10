@@ -1,10 +1,11 @@
-@import "../../../styles/mixins";
+@import "../../../styles/global";
 
 mat-card{
-  margin-top: calculateRem(300px);
+  margin-top: 200px;
   margin-right: calc(33.3333333333% - 20px);
   margin-left: calc(33.3333333333% - 20px);
-  width: calc(33.3333333333% + 40px);;
+  margin-bottom: 5px;
+  width: calc(33.3333333333% + 40px);
 }
 
 mat-form-field{
@@ -12,32 +13,42 @@ mat-form-field{
 }
 
 mat-card-title{
-  font-size: calculateRem(25px) !important;
-  font-weight: bold;
+  font-size: 25px !important;
+  font-weight: bold !important;
 }
 
 mat-card-subtitle{
-  font-size: calculateRem(20px) !important;
+  font-size: 20px !important;
   font-weight: bold;
 }
 
 .input{
   width: 100% !important;
-  height: calculateRem(20px);
-  font-size: calculateRem(20px);
+  height: 20px;
+  font-size: 20px;
 }
 
-.button{
-  background-color: $secondary--color;
-}
-
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 960px) {
   mat-card{
     margin: 20px !important;
     width: auto;
   }
 }
+
 mat-card-content{
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.changeToRegister{
+  margin-left: 20px;
+}
+.changeToRegister a{
+  text-decoration: none;
+  color: $primary;
+  font-weight: bold;
+}
+
+.bottom{
+  margin-top: 10px;
 }

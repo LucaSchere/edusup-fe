@@ -15,6 +15,9 @@ import {
   MatTooltipModule,
   MatSidenavModule,
   MatToolbarModule,
+  MatStepperModule,
+  MatNativeDateModule,
+  MatDatepickerModule,
 } from '@angular/material';
 import {NgModule} from '@angular/core';
 
@@ -36,6 +39,9 @@ import {NgModule} from '@angular/core';
     MatDialogModule,
     MatSidenavModule,
     MatToolbarModule,
+    MatStepperModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
   ],
   exports: [
     MatButtonModule,
@@ -54,6 +60,9 @@ import {NgModule} from '@angular/core';
     MatDialogModule,
     MatSidenavModule,
     MatToolbarModule,
+    MatStepperModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
   ],
 })
 

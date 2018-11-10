@@ -5,8 +5,6 @@ export let APP_CONFIG = new InjectionToken('app.config');
 export let AppConfig: any = {
   title:
     'Education Support',
-  isLoggedIn:
-    true,
   routes: {
     error404: '404',
     dashboard: 'dashboard',

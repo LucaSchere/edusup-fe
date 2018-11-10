@@ -1,22 +1,23 @@
-<div fxFill fxLayout="column" layout-align="center none">
-  <div layout="row" layout-align="center none">
-    <mat-card class="login-card">
-      <mat-card-header>
-        <mat-card-title>{{title}}</mat-card-title>
-        <mat-card-subtitle>Login</mat-card-subtitle>
-        <div class="flex-spacer"></div>
-      </mat-card-header>
-      <mat-card-content>
-        <form (submit)="onClickLogin($event)">
-          <mat-form-field>
-            <input matInput #test class="input" id="username" placeholder="Benutzername">
-          </mat-form-field>
-          <mat-form-field>
-            <input matInput #test2 class="input" id="password" placeholder="Passwort" type="password">
-          </mat-form-field>
-          <button type="submit" mat-flat-button class="button">Go!</button>
-        </form>
-      </mat-card-content>
-    </mat-card>
-  </div>
-</div>
+<mat-card class="login-card">
+  <mat-card-header>
+    <mat-card-title>{{title}}</mat-card-title>
+    <mat-card-subtitle>Login</mat-card-subtitle>
+    <div class="flex-spacer"></div>
+  </mat-card-header>
+  <mat-card-content>
+    <form (submit)="onClickLogin(f)" #f="ngForm">
+      <mat-form-field>
+        <input matInput class="input" type="text" id="username" ngModel placeholder="Benutzername" name="username">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput class="input" type="password" id="password" ngModel placeholder="Passwort" name="password">
+      </mat-form-field>
+      <div class="bottom">
+        <button type="submit" mat-flat-button class="button">Go!</button>
+        <span class="changeToRegister"><a
+          routerLink="/register">Registriere dich jetzt!</a></span>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>
+

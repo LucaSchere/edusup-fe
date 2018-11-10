@@ -4,7 +4,6 @@ import {UserDetailComponent} from './pages/users-detail/user-detail.component';
 import {UserEditComponent} from './pages/users-edit/user-edit.component';
 import { AppConfig } from '../../configs/app.config';
 import { AuthGuard} from '../../core/services/auth.guard';
-import {AuthService} from '../../core/services/auth.service';
 
 const routes: Routes = [
   {path: '', component: UserDetailComponent},
@@ -18,7 +17,7 @@ const routes: Routes = [
     RouterModule.forChild(routes)
   ],
   providers: [
-    AuthService, AuthGuard
+    AuthGuard
   ],
   exports: [
     RouterModule

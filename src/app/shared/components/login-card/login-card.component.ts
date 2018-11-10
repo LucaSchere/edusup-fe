@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {AppConfig} from '../../../configs/app.config';
-import {AuthService} from '../../../core/services/auth.service';
 import { Router } from '@angular/router';
+import { NgForm } from '@angular/forms';
+import { SessionService } from '../../../core/services/session.service';
 
 @Component({
   selector: 'app-login-card',
@@ -11,24 +12,17 @@ import { Router } from '@angular/router';
 export class LoginCardComponent implements OnInit {
   title = AppConfig.title;
 
-  constructor(private authService: AuthService, private router: Router) {
+  constructor(private router: Router, private sessionService: SessionService) {
   }
   ngOnInit() {
 
   }
 
-  onClickLogin(event) {
+  onClickLogin(form: NgForm) {
     event.preventDefault();
-    const target = event.target;
-    const username = target.querySelector('#username').value;
-    const password = target.querySelector('#password').value;
+    const username = form.value.username;
+    const password = form.value.password;
 
-    this.authService.login(username, password).subscribe(data => {
-      if (data['success']) {
-        console.log(data);
-        this.authService.setLoggedIn(true);
-        this.router.navigate(['/']);
-      }
-    });
+    this.sessionService.onLogin(username, password);
   }
 }
