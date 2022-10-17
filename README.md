@@ -1,5 +1,6 @@
-# Angular education-supporter
+# Angular frontend for education-supporter
+project suspended
 
-## Gradebook
-## Gradecalculator
-## E-Dossier
+## how to use
+Clone https://github.com/LucaSchere/edusup-fe.git and run `ng s`.
+Have fun!
